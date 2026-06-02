@@ -1,0 +1,15 @@
+# Robots.txt for Rama Krishna Properties
+# https://legalaidsindia.github.io/Rkproperties/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://legalaidsindia.github.io/Rkproperties/sitemap.xml
+
+# Crawl-delay (optional, be polite to crawlers)
+Crawl-delay: 1
+
+# Block access to system files
+Disallow: /.git/
+Disallow: /assets/images/*.psd

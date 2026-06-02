@@ -1,0 +1,37 @@
+# Rama Krishna Properties
+
+> Trusted Real Estate Advisors in Delhi NCR for Residential, Commercial & Investment Properties.
+
+## About
+Rama Krishna Properties is a premier real estate consultancy based in Delhi, India. We specialize in residential apartments, builder floors, villas, commercial spaces, plots, and investment properties across Delhi NCR including Noida, Gurgaon, Ghaziabad, and Greater Noida.
+
+## Services
+- Property buying and selling assistance
+- Home loan assistance with SBI, HDFC, ICICI tie-ups
+- Property valuation by certified valuers
+- Interior design consultation
+- Legal and documentation support
+- Property management services
+- NRI property services
+- Investment advisory
+
+## Tools
+- EMI Calculator
+- Circle Rate Calculator
+- Stamp Duty Calculator
+- Due Diligence Checker
+- Deed Writer Guide
+- Land Records Guide
+
+## Contact
+- Phone: +91 78388 25736
+- Email: ramakrishnaproperties@gmail.com
+- Address: Office 444, Gali No 8, Chandan Park, Siraspur, Delhi 110042
+- Website: https://legalaidsindia.github.io/Rkproperties/
+
+## Pages
+- Home: https://legalaidsindia.github.io/Rkproperties/
+- Blog: https://legalaidsindia.github.io/Rkproperties/blog.html
+- Privacy Policy: https://legalaidsindia.github.io/Rkproperties/privacy-policy.html
+- Terms & Conditions: https://legalaidsindia.github.io/Rkproperties/terms.html
+- Sitemap: https://legalaidsindia.github.io/Rkproperties/sitemap.html
