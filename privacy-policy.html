@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Rama Krishna Properties. Learn how we collect, use, and protect your personal information when you use our real estate services.">
+    <meta name="keywords" content="privacy policy, data protection, Rama Krishna Properties, personal information, real estate privacy">
+    <meta name="author" content="Rama Krishna Properties">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy | Rama Krishna Properties">
+    <meta property="og:description" content="Learn how Rama Krishna Properties collects, uses, and protects your personal information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ramakrishnaproperties.com/privacy-policy.html">
+
+    <title>Privacy Policy | Rama Krishna Properties</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Page-specific styles for legal pages */
+        .legal-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, var(--dark) 0%, #0a1628 50%, var(--dark) 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .legal-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(199, 163, 105, 0.08) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 30%, rgba(199, 163, 105, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .legal-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        .legal-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(199, 163, 105, 0.1);
+            border: 1px solid rgba(199, 163, 105, 0.25);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--gold);
+            margin-bottom: 24px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .legal-hero-badge svg {
+            flex-shrink: 0;
+        }
+        .legal-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .legal-hero p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .legal-breadcrumb {
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+        .legal-breadcrumb a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .legal-breadcrumb a:hover {
+            color: var(--gold);
+        }
+        .legal-breadcrumb span {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .legal-breadcrumb .current {
+            color: var(--gold);
+        }
+
+        .legal-content {
+            padding: 80px 0 100px;
+            background: var(--light);
+        }
+        .legal-content .container {
+            max-width: 900px;
+        }
+        .legal-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 48px 56px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .legal-last-updated {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(199, 163, 105, 0.08);
+            border: 1px solid rgba(199, 163, 105, 0.2);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--gold);
+            margin-bottom: 32px;
+            font-weight: 500;
+        }
+        .legal-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin: 40px 0 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(199, 163, 105, 0.2);
+        }
+        .legal-card h2:first-of-type {
+            margin-top: 0;
+        }
+        .legal-card h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 24px 0 10px;
+        }
+        .legal-card p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 16px;
+        }
+        .legal-card ul, .legal-card ol {
+            margin: 12px 0 20px 20px;
+            padding: 0;
+        }
+        .legal-card li {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .legal-card ul li {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .legal-card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+        }
+        .legal-card a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .legal-card a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        .legal-card .contact-box {
+            background: linear-gradient(135deg, rgba(199, 163, 105, 0.05) 0%, rgba(199, 163, 105, 0.1) 100%);
+            border: 1px solid rgba(199, 163, 105, 0.2);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-top: 24px;
+        }
+        .legal-card .contact-box p {
+            margin-bottom: 6px;
+        }
+        .legal-card .contact-box strong {
+            color: var(--dark);
+        }
+        .legal-toc {
+            background: rgba(199, 163, 105, 0.05);
+            border: 1px solid rgba(199, 163, 105, 0.15);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 36px;
+        }
+        .legal-toc h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 0 0 12px;
+        }
+        .legal-toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .legal-toc li {
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+        .legal-toc a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .legal-toc a:hover {
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .legal-hero {
+                padding: 130px 0 60px;
+            }
+            .legal-card {
+                padding: 28px 24px;
+            }
+            .legal-card h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/images/rk-logo.png" alt="Rama Krishna Properties Logo" style="height:44px;">
+                <span class="logo-text">Rama Krishna<br><small>Properties</small></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#hero" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#featured" class="nav-link">Properties</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#tools" class="nav-link">Tools</a></li>
+                <li><a href="index.html#investment" class="nav-link">Investment</a></li>
+                <li><a href="index.html#blog" class="nav-link">Blog</a></li>
+                <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+917838825736" class="nav-phone">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>+91 78388 25736</span>
+                </a>
+                <a href="index.html#lead-gen" class="btn btn-primary nav-cta">Free Consultation</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html#hero" class="mobile-link">Home</a></li>
+            <li><a href="index.html#about" class="mobile-link">About</a></li>
+            <li><a href="index.html#featured" class="mobile-link">Properties</a></li>
+            <li><a href="index.html#services" class="mobile-link">Services</a></li>
+            <li><a href="index.html#tools" class="mobile-link">Tools</a></li>
+            <li><a href="index.html#investment" class="mobile-link">Investment</a></li>
+            <li><a href="index.html#blog" class="mobile-link">Blog</a></li>
+            <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+            <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="tel:+917838825736" class="btn btn-primary" style="width:100%;text-align:center;">
+                Call Now: +91 78388 25736
+            </a>
+            <a href="index.html#lead-gen" class="btn btn-secondary" style="width:100%;text-align:center;margin-top:12px;">
+                Free Consultation
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="legal-hero">
+        <div class="container">
+            <div class="legal-hero-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                Your Privacy Matters
+            </div>
+            <h1>Privacy Policy</h1>
+            <p>We are committed to protecting your personal information and your right to privacy. Learn how we handle your data.</p>
+            <div class="legal-breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span class="current">Privacy Policy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRIVACY POLICY CONTENT ==================== -->
+    <section class="legal-content">
+        <div class="container">
+            <div class="legal-card">
+                <div class="legal-last-updated">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    Last Updated: June 1, 2026
+                </div>
+
+                <div class="legal-toc">
+                    <h3>Table of Contents</h3>
+                    <ol>
+                        <li><a href="#pp-intro">Introduction</a></li>
+                        <li><a href="#pp-collection">Information We Collect</a></li>
+                        <li><a href="#pp-use">How We Use Your Information</a></li>
+                        <li><a href="#pp-cookies">Cookies & Tracking Technologies</a></li>
+                        <li><a href="#pp-sharing">Information Sharing & Third-Party Services</a></li>
+                        <li><a href="#pp-security">Data Security</a></li>
+                        <li><a href="#pp-retention">Data Retention</a></li>
+                        <li><a href="#pp-rights">Your Rights</a></li>
+                        <li><a href="#pp-children">Children's Privacy</a></li>
+                        <li><a href="#pp-international">International Data Transfers</a></li>
+                        <li><a href="#pp-changes">Changes to This Policy</a></li>
+                        <li><a href="#pp-contact">Contact Us</a></li>
+                    </ol>
+                </div>
+
+                <!-- 1. Introduction -->
+                <h2 id="pp-intro">1. Introduction</h2>
+                <p>Welcome to Rama Krishna Properties ("Company," "we," "us," or "our"). We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>ramakrishnaproperties.com</strong> (the "Website"), use our services, or interact with us in any capacity.</p>
+                <p>By accessing or using our Website and services, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please discontinue use of our Website and services immediately.</p>
+                <p>This policy applies to all information collected through our Website, as well as any related services, sales, marketing, or events (collectively, the "Services").</p>
+
+                <!-- 2. Information We Collect -->
+                <h2 id="pp-collection">2. Information We Collect</h2>
+
+                <h3>2.1 Personal Information You Provide</h3>
+                <p>We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our properties and services, when you participate in activities on the Website, or otherwise when you contact us. The personal information we collect may include:</p>
+                <ul>
+                    <li><strong>Identity Data:</strong> Full name, title, date of birth, and gender</li>
+                    <li><strong>Contact Data:</strong> Email address, telephone numbers, postal address, and communication preferences</li>
+                    <li><strong>Property Preferences:</strong> Location preferences, budget range, property type, number of bedrooms/bathrooms, preferred amenities, and other property search criteria</li>
+                    <li><strong>Financial Data:</strong> Income details, employment information, and loan eligibility details shared during consultation</li>
+                    <li><strong>Identity Documents:</strong> PAN card, Aadhaar card, passport, or other identification documents when required for property transactions</li>
+                    <li><strong>Communication Records:</strong> Emails, WhatsApp messages, call recordings (where permitted), and chat transcripts</li>
+                    <li><strong>Feedback and Correspondence:</strong> Survey responses, reviews, testimonials, and other feedback you provide</li>
+                </ul>
+
+                <h3>2.2 Information Collected Automatically</h3>
+                <p>When you visit our Website, we automatically collect certain information about your device, browsing actions, and usage patterns. This includes:</p>
+                <ul>
+                    <li><strong>Device Information:</strong> IP address, browser type and version, operating system, device type, screen resolution, and unique device identifiers</li>
+                    <li><strong>Usage Data:</strong> Pages visited, time spent on pages, links clicked, referring URLs, and navigation paths through our Website</li>
+                    <li><strong>Location Data:</strong> Approximate geographic location based on your IP address or, with your consent, more precise GPS-based location data</li>
+                    <li><strong>Log Data:</strong> Server logs including access times, error logs, and system activity records</li>
+                </ul>
+
+                <h3>2.3 Information from Third Parties</h3>
+                <p>We may receive information about you from third-party sources, including:</p>
+                <ul>
+                    <li>Property listing platforms and real estate databases</li>
+                    <li>Social media platforms when you interact with our social media presence</li>
+                    <li>Business partners, referral agents, and affiliated real estate professionals</li>
+                    <li>Public records, property registries, and government databases relevant to property transactions</li>
+                    <li>Analytics providers, advertising networks, and search information providers</li>
+                </ul>
+
+                <!-- 3. How We Use Your Information -->
+                <h2 id="pp-use">3. How We Use Your Information</h2>
+                <p>We use the information we collect or receive for various legitimate business purposes, including:</p>
+
+                <h3>3.1 Service Delivery</h3>
+                <ul>
+                    <li>To facilitate property searches, viewings, and transactions</li>
+                    <li>To provide personalized property recommendations based on your preferences</li>
+                    <li>To assist with home loan processing and financial documentation</li>
+                    <li>To facilitate legal documentation, verification, and property registration</li>
+                    <li>To schedule site visits, consultations, and follow-up meetings</li>
+                </ul>
+
+                <h3>3.2 Communication</h3>
+                <ul>
+                    <li>To respond to your inquiries, requests, and feedback</li>
+                    <li>To send property alerts, market updates, and newsletters (with your consent)</li>
+                    <li>To notify you about changes to our services, policies, or terms</li>
+                    <li>To provide customer support and resolve issues</li>
+                </ul>
+
+                <h3>3.3 Improvement & Analytics</h3>
+                <ul>
+                    <li>To analyze usage patterns and improve our Website's performance and user experience</li>
+                    <li>To conduct market research and understand industry trends</li>
+                    <li>To develop new features, services, and product offerings</li>
+                    <li>To generate aggregated, anonymized statistical data for internal reporting</li>
+                </ul>
+
+                <h3>3.4 Legal & Compliance</h3>
+                <ul>
+                    <li>To comply with applicable laws, regulations, and legal processes</li>
+                    <li>To enforce our terms, conditions, and agreements</li>
+                    <li>To protect our rights, property, or safety, and that of our users and third parties</li>
+                    <li>To detect, prevent, and address fraud, security breaches, and technical issues</li>
+                </ul>
+
+                <!-- 4. Cookies & Tracking -->
+                <h2 id="pp-cookies">4. Cookies & Tracking Technologies</h2>
+                <p>We use cookies, web beacons, tracking pixels, and similar technologies to access or store information on your device. These technologies help us understand how you use our Website and improve your experience.</p>
+
+                <h3>4.1 Types of Cookies We Use</h3>
+                <ul>
+                    <li><strong>Essential Cookies:</strong> Required for the Website to function properly. These cannot be disabled without impacting site functionality.</li>
+                    <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our Website by collecting and reporting information anonymously (e.g., Google Analytics).</li>
+                    <li><strong>Functional Cookies:</strong> Enable enhanced functionality and personalization, such as remembering your property search preferences and language settings.</li>
+                    <li><strong>Marketing Cookies:</strong> Used to track visitors across websites to display relevant advertisements. These cookies are set by our advertising partners with our permission.</li>
+                </ul>
+
+                <h3>4.2 Managing Cookies</h3>
+                <p>Most web browsers allow you to control cookies through their settings. You can set your browser to refuse all or some cookies, or to alert you when cookies are being sent. However, if you disable or refuse cookies, some parts of our Website may become inaccessible or not function properly.</p>
+
+                <h3>4.3 Third-Party Analytics</h3>
+                <p>We use Google Analytics and similar analytics services to help analyze how users use the Website. The information generated by cookies about your use of the Website is transmitted to and stored by Google on servers in the United States. Google uses this information to evaluate your use of the Website, compile reports on website activity, and provide other services relating to website activity and internet usage. You can opt-out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+                <!-- 5. Information Sharing -->
+                <h2 id="pp-sharing">5. Information Sharing & Third-Party Services</h2>
+                <p>We do not sell your personal information to third parties. However, we may share your information in the following circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With trusted third-party service providers who assist us in operating our Website, conducting our business, or servicing you (e.g., hosting providers, email services, CRM platforms, payment processors).</li>
+                    <li><strong>Property Developers & Partners:</strong> With property developers, builders, and affiliated real estate professionals when necessary to facilitate property transactions on your behalf.</li>
+                    <li><strong>Financial Institutions:</strong> With banks and lending institutions when you apply for home loans or financial products through our services.</li>
+                    <li><strong>Legal Requirements:</strong> When required by law, regulation, legal process, or governmental request.</li>
+                    <li><strong>Business Transfers:</strong> In connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business.</li>
+                    <li><strong>With Your Consent:</strong> In any other situations where we have your explicit consent to share your information.</li>
+                </ul>
+                <p>All third parties with whom we share your data are contractually obligated to keep your personal information confidential and to use it only for the purposes for which we disclose it to them.</p>
+
+                <!-- 6. Data Security -->
+                <h2 id="pp-security">6. Data Security</h2>
+                <p>We implement appropriate technical and organizational security measures to protect the security of your personal information. These measures include:</p>
+                <ul>
+                    <li>SSL/TLS encryption for data transmitted between your browser and our servers</li>
+                    <li>Encrypted storage of sensitive personal and financial information</li>
+                    <li>Regular security assessments and vulnerability testing</li>
+                    <li>Access controls limiting personnel who can access personal information</li>
+                    <li>Employee training on data protection and security best practices</li>
+                    <li>Secure data backup and disaster recovery procedures</li>
+                </ul>
+                <p>Despite our best efforts, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security. If you have reason to believe that your interaction with us is no longer secure, please contact us immediately.</p>
+
+                <!-- 7. Data Retention -->
+                <h2 id="pp-retention">7. Data Retention</h2>
+                <p>We retain your personal information only for as long as necessary to fulfill the purposes for which we collected it, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+                <p>To determine the appropriate retention period, we consider the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorized use or disclosure, the purposes for which we process your data, and applicable legal requirements.</p>
+                <ul>
+                    <li><strong>Transaction Records:</strong> Retained for a minimum of 8 years as required under Indian tax and property laws</li>
+                    <li><strong>Marketing Communications:</strong> Until you unsubscribe or request deletion</li>
+                    <li><strong>Website Analytics:</strong> Aggregated data retained for up to 26 months</li>
+                    <li><strong>Inquiry Records:</strong> Retained for 3 years after last contact unless converted to a transaction</li>
+                </ul>
+
+                <!-- 8. Your Rights -->
+                <h2 id="pp-rights">8. Your Rights</h2>
+                <p>Depending on your location and applicable laws, you may have the following rights regarding your personal information:</p>
+                <ul>
+                    <li><strong>Right to Access:</strong> You have the right to request copies of your personal data that we hold.</li>
+                    <li><strong>Right to Rectification:</strong> You have the right to request that we correct any information you believe is inaccurate or incomplete.</li>
+                    <li><strong>Right to Erasure:</strong> You have the right to request that we erase your personal data, under certain conditions.</li>
+                    <li><strong>Right to Restrict Processing:</strong> You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+                    <li><strong>Right to Data Portability:</strong> You have the right to request that we transfer the data we have collected to another organization, or directly to you, under certain conditions.</li>
+                    <li><strong>Right to Object:</strong> You have the right to object to our processing of your personal data, under certain conditions.</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Where we rely on your consent to process your personal information, you have the right to withdraw that consent at any time.</li>
+                    <li><strong>Right to Opt-Out:</strong> You can opt-out of receiving marketing communications from us at any time by clicking the "unsubscribe" link in our emails or contacting us directly.</li>
+                </ul>
+                <p>To exercise any of these rights, please contact us using the details provided at the bottom of this policy. We will respond to your request within 30 days. We may need to verify your identity before processing your request.</p>
+
+                <!-- 9. Children's Privacy -->
+                <h2 id="pp-children">9. Children's Privacy</h2>
+                <p>Our Website and services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children under 18 years of age. If we learn that we have collected personal information from a child under 18 without verification of parental consent, we will take steps to delete that information as quickly as possible.</p>
+                <p>If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us immediately so that we can take the necessary steps to remove such information from our servers.</p>
+
+                <!-- 10. International Data Transfers -->
+                <h2 id="pp-international">10. International Data Transfers</h2>
+                <p>Your information may be transferred to, stored, and processed in countries other than India where our servers, service providers, or partners are located. If we transfer your personal data outside of India, we ensure that adequate data protection measures are in place, in compliance with the Information Technology Act, 2000, the Digital Personal Data Protection Act, 2023, and applicable data protection regulations.</p>
+                <p>By using our Website and providing your information, you consent to the transfer of your information to countries outside of your country of residence, which may have different data protection rules than those of your country.</p>
+
+                <!-- 11. Changes to This Policy -->
+                <h2 id="pp-changes">11. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make material changes, we will:</p>
+                <ul>
+                    <li>Update the "Last Updated" date at the top of this page</li>
+                    <li>Post a prominent notice on our Website</li>
+                    <li>Send a notification via email to users who have provided their email addresses (for significant changes)</li>
+                </ul>
+                <p>We encourage you to review this Privacy Policy periodically for the latest information on our privacy practices. Your continued use of our Website and services after any changes to this Privacy Policy constitutes your acceptance of such changes.</p>
+
+                <!-- 12. Contact Us -->
+                <h2 id="pp-contact">12. Contact Us</h2>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                <div class="contact-box">
+                    <p><strong>Rama Krishna Properties</strong></p>
+                    <p>📍 Office 444, Gali No 8, Chandan Park, Siraspur, Delhi 110042</p>
+                    <p>📧 Email: <a href="mailto:ramakrishnaproperties@gmail.com">ramakrishnaproperties@gmail.com</a></p>
+                    <p>📞 Phone: <a href="tel:+917838825736">+91 78388 25736</a></p>
+                    <p>💬 WhatsApp: <a href="https://wa.me/917838825736" target="_blank" rel="noopener">+91 78388 25736</a></p>
+                </div>
+                <p style="margin-top:24px;">We take your privacy seriously and aim to respond to all legitimate requests within 30 business days. If you are not satisfied with our response, you have the right to raise a complaint with the relevant data protection authority.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/rk-logo.png" alt="Rama Krishna Properties Logo" style="height:44px;">
+                        <span class="logo-text">Rama Krishna<br><small>Properties</small></span>
+                    </div>
+                    <p class="footer-desc">Your trusted real estate partner for residential, commercial, and investment properties. Building dreams, one property at a time.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#featured">Properties</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#investment">Investment</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Property Types</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#categories">Apartments</a></li>
+                        <li><a href="index.html#categories">Builder Floors</a></li>
+                        <li><a href="index.html#categories">Villas</a></li>
+                        <li><a href="index.html#categories">Commercial</a></li>
+                        <li><a href="index.html#categories">Plots & Land</a></li>
+                        <li><a href="index.html#categories">Office Spaces</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p style="color:rgba(255,255,255,0.6);margin-bottom:16px;font-size:0.9rem;">Subscribe to get the latest property updates and investment tips.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                    <div class="footer-contact-info">
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +91 78388 25736
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            ramakrishnaproperties@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rama Krishna Properties. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING BUTTONS ==================== -->
+    <a href="https://wa.me/917838825736?text=Hello%2C%20I%20am%20interested%20in%20your%20property%20services.%20Please%20provide%20more%20information." target="_blank" class="floating-whatsapp" id="floatingWhatsapp" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="floating-tooltip">Chat with us!</span>
+    </a>
+
+    <a href="tel:+917838825736" class="floating-call" id="floatingCall" aria-label="Call us">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span class="floating-tooltip">Call Now!</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Minimal JS for navbar & mobile menu on subpages -->
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        // Trigger on load
+        if (window.scrollY > 50) navbar.classList.add('scrolled');
+
+        // Mobile menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll for TOC
+        document.querySelectorAll('.legal-toc a').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
