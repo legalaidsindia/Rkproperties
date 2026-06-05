@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0f101f">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <title>Student Dashboard | RK Properties</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-hub.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">RK</div>
+            <div class="preloader-spinner"></div>
+            <p class="preloader-text">Loading student session...</p>
+        </div>
+    </div>
+
+    <!-- ==================== DASHBOARD CONTAINER ==================== -->
+    <div class="dashboard-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="dashboard-sidebar">
+            <div class="dashboard-logo">
+                <a href="index.html">
+                    <img src="assets/images/rk-logo.png" alt="RK Logo" style="height:44px; width:auto;">
+                </a>
+            </div>
+            
+            <nav class="dashboard-nav">
+                <a href="#" class="dashboard-nav-link active" data-section="student-overview">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+                    <span>Overview</span>
+                </a>
+                <a href="#" class="dashboard-nav-link" data-section="student-saved">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                    <span>Saved PGs (${dbSavedCountText})</span>
+                </a>
+                <a href="#" class="dashboard-nav-link" data-section="student-docs">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span>My Documents</span>
+                </a>
+                <a href="#" class="dashboard-nav-link" data-section="student-membership">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>Membership</span>
+                </a>
+                <a href="#" class="dashboard-nav-link" data-section="student-profile">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>Profile Settings</span>
+                </a>
+            </nav>
+
+            <div class="dashboard-sidebar-footer">
+                <div class="dashboard-user-card">
+                    <div class="user-avatar">..</div>
+                    <div class="user-info-brief">
+                        <span class="user-name-brief db-user-name">Loading...</span>
+                        <span class="user-role-brief">Student Tenant</span>
+                    </div>
+                </div>
+                <a href="#" class="dashboard-nav-link" id="dashboardLogoutBtn" style="color:var(--accent-red);">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="dashboard-content-area">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="dashboard-title-group">
+                    <h2 style="font-family:var(--font-primary);">Hello, <span class="db-user-name">Student</span>!</h2>
+                    <p>Manage your bookings, digital agreements, and rental records.</p>
+                </div>
+                <a href="students-hub.html" class="btn btn-secondary btn-sm">Find New PGs</a>
+            </header>
+
+            <!-- ==================== TAB: OVERVIEW ==================== -->
+            <section class="dashboard-section active" id="student-overview">
+                <!-- Stats Cards -->
+                <div class="dashboard-stats-grid">
+                    <div class="stat-dark-card">
+                        <div class="stat-dark-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div class="stat-dark-info">
+                            <span class="stat-dark-num" id="dbSavedCountText">0</span>
+                            <span class="stat-dark-label">Bookmarked Rooms</span>
+                        </div>
+                    </div>
+                    <div class="stat-dark-card">
+                        <div class="stat-dark-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                        </div>
+                        <div class="stat-dark-info">
+                            <span class="stat-dark-num" id="dbRequestsCountText">0</span>
+                            <span class="stat-dark-label">Legal Requests</span>
+                        </div>
+                    </div>
+                    <div class="stat-dark-card">
+                        <div class="stat-dark-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <div class="stat-dark-info">
+                            <span class="stat-dark-num" id="dbMembershipPlan" style="font-size:1.15rem; font-weight:700;">Free</span>
+                            <span class="stat-dark-label">Membership Tier</span>
+                        </div>
+                    </div>
+                    <div class="stat-dark-card">
+                        <div class="stat-dark-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div class="stat-dark-info">
+                            <span class="stat-dark-num" style="font-size: 1.15rem;">Active</span>
+                            <span class="stat-dark-label">Session Status</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anti-Brokerage promo banner if free -->
+                <div class="dark-panel" id="dbUpgradePromoBanner" style="display: none; background: linear-gradient(135deg, rgba(26, 35, 126, 0.4) 0%, rgba(201, 169, 110, 0.15) 100%); border-color: var(--gold);">
+                    <h3 style="color: var(--gold-light); font-weight: 700; margin-bottom: 8px;">Unlock Direct Owner Contacts!</h3>
+                    <p style="color: var(--gray-light); margin-bottom: 20px; font-size: 0.95rem;">You are currently on the Free Plan. Pay a one-time fee of only <strong>₹49</strong> to unlock phone numbers of verified landlords directly. Stop paying thousands in brokerage fee!</p>
+                    <a href="membership.html" class="btn btn-secondary btn-sm">Upgrade to Anti-Brokerage Membership</a>
+                </div>
+
+                <!-- Recent Saved Listings -->
+                <div class="dark-panel">
+                    <div class="panel-header">
+                        <h3 class="panel-title">My Bookmarked Listings</h3>
+                        <a href="#" onclick="document.querySelector('.dashboard-nav-link[data-section=\'student-saved\']').click();" style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;">View All</a>
+                    </div>
+                    <div class="student-property-grid" id="dbSavedPropertiesGrid">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== TAB: SAVED LISTINGS ==================== -->
+            <section class="dashboard-section" id="student-saved">
+                <div class="dark-panel">
+                    <h3 class="panel-title" style="margin-bottom: 20px;">Bookmarked Properties</h3>
+                    <p style="color: var(--gray); font-size:0.9rem; margin-bottom: 30px;">Manage and view your saved PGs, hostels, or apartment rooms. Upgrade to premium to instantly reveal direct phone numbers.</p>
+                    <div class="student-property-grid" id="dbSavedPropertiesGridAll">
+                        <!-- Dual binding -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== TAB: DOCUMENTS ==================== -->
+            <section class="dashboard-section" id="student-docs">
+                <!-- Legal Service Requests tracking -->
+                <div class="dark-panel">
+                    <h3 class="panel-title" style="margin-bottom: 20px;">Legal Assistance Status</h3>
+                    <p style="color: var(--gray); font-size:0.9rem; margin-bottom: 24px;">Track document drafting status for digital rent agreements or local police verifications.</p>
+                    <div class="tracking-list" id="dbServiceRequestsList">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <!-- Downloadable templates -->
+                <div class="dark-panel">
+                    <h3 class="panel-title" style="margin-bottom: 20px;">Useful Resources & Guides</h3>
+                    
+                    <div class="doc-card">
+                        <div class="doc-info">
+                            <div class="doc-icon">PDF</div>
+                            <div>
+                                <h4 style="font-weight: 700; font-size: 0.95rem;">Model Rent Deed Agreement Template</h4>
+                                <p style="font-size: 0.8rem; color: var(--gray);">Standard legal layout draft in PDF format (Free)</p>
+                            </div>
+                        </div>
+                        <a href="assets/docs/rent-agreement.pdf" download class="btn btn-outline btn-sm">Download</a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-info">
+                            <div class="doc-icon">PDF</div>
+                            <div>
+                                <h4 style="font-weight: 700; font-size: 0.95rem;">Student Tenant Move-in Checklist</h4>
+                                <p style="font-size: 0.8rem; color: var(--gray);">Essential checklist covering amenities checks, security deposits, and meter readings.</p>
+                            </div>
+                        </div>
+                        <a href="assets/docs/move-in-checklist.pdf" download class="btn btn-outline btn-sm">Download</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== TAB: MEMBERSHIP ==================== -->
+            <section class="dashboard-section" id="student-membership">
+                <div class="dark-panel" style="text-align: center; padding: 50px 30px;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" style="margin-bottom: 20px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; color: var(--white);">Anti-Brokerage Membership</h3>
+                    <p style="max-width: 600px; margin: 0 auto 30px; color: var(--gray-light); line-height: 1.6;">Gain direct access to all student listings, PG managers, and independent landlords near North Campus, South Campus, GTB Nagar, and Siraspur. No brokers, no hidden commission fees!</p>
+                    
+                    <div style="background: rgba(255,255,255,0.02); max-width: 400px; margin:0 auto 30px; padding: 24px; border-radius: var(--radius-sm); border: 1px solid var(--border-dark);">
+                        <h4 style="color: var(--gray-light); font-size:0.9rem; text-transform:uppercase;">1-Year Unlimited Access</h4>
+                        <div style="font-size: 3rem; font-weight: 800; color: var(--gold-light); margin: 10px 0;">₹49</div>
+                        <p style="font-size: 0.8rem; color: var(--gray);">Includes 1-year updates & refund assurance</p>
+                    </div>
+
+                    <a href="membership.html" class="btn btn-secondary btn-lg">Upgrade Account Now</a>
+                </div>
+            </section>
+
+            <!-- ==================== TAB: PROFILE ==================== -->
+            <section class="dashboard-section" id="student-profile">
+                <div class="dark-panel">
+                    <h3 class="panel-title" style="margin-bottom: 24px;">Edit Profile Information</h3>
+                    <form id="dbStudentProfileForm">
+                        <div class="dark-form-group">
+                            <label for="dbStudentEditName">Full Name</label>
+                            <input type="text" id="dbStudentEditName" required>
+                        </div>
+                        <div class="dark-form-row">
+                            <div class="dark-form-group">
+                                <label for="dbStudentEditPhone">Phone Number</label>
+                                <input type="tel" id="dbStudentEditPhone" required>
+                            </div>
+                            <div class="dark-form-group">
+                                <label for="dbStudentEditCollege">College / Institute</label>
+                                <input type="text" id="dbStudentEditCollege">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="margin-top: 10px; font-weight:700;">Save Changes</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    
+    <!-- Application Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/student-hub.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Sync saved properties tab grid -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabLinks = document.querySelectorAll('.dashboard-nav-link');
+            tabLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (link.dataset.section === 'student-saved') {
+                        // Mirror saved properties grid
+                        const rootGrid = document.getElementById('dbSavedPropertiesGrid');
+                        const targetGrid = document.getElementById('dbSavedPropertiesGridAll');
+                        if (rootGrid && targetGrid) {
+                            targetGrid.innerHTML = rootGrid.innerHTML;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

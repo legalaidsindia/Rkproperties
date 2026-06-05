@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login or register for Rama Krishna Properties Student Hub and Owner Portal. Manage listings and documentation.">
+    <meta name="theme-color" content="#1a237e">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <title>Login / Register | RK Properties Portal</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-hub.css">
+</head>
+<body style="margin: 0; padding: 0; background: var(--off-white);">
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">RK</div>
+            <div class="preloader-spinner"></div>
+            <p class="preloader-text">Securing session...</p>
+        </div>
+    </div>
+
+    <!-- ==================== AUTH PORTAL LAYOUT ==================== -->
+    <div class="auth-wrapper">
+        <!-- Visual Column -->
+        <div class="auth-banner-side">
+            <div class="auth-banner-logo">
+                <a href="index.html">
+                    <img src="assets/images/rk-logo.png" alt="Rama Krishna Properties Logo" style="height:64px;width:auto;">
+                </a>
+            </div>
+            <h1 class="auth-banner-title">Exclusive Student & Property Owner Portal</h1>
+            <p class="auth-banner-text">Access thousands of zero-brokerage PG & hostel options in Delhi NCR or list your property to find verified students instantly.</p>
+        </div>
+
+        <!-- Form Column -->
+        <div class="auth-form-side">
+            <div class="auth-card">
+                <!-- Navigation back to Home -->
+                <a href="index.html" style="display:flex; align-items:center; gap:8px; font-weight:600; color:var(--primary); margin-bottom: 24px; font-size: 0.9rem;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    <span>Back to Home</span>
+                </a>
+
+                <!-- Tabs -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tabBtnLogin" onclick="switchAuthMode('login')">Sign In</button>
+                    <button class="auth-tab" id="tabBtnRegister" onclick="switchAuthMode('register')">Register</button>
+                </div>
+
+                <!-- ==================== SIGN IN FORM ==================== -->
+                <div id="authLoginFormSection">
+                    <h2 class="auth-title">Welcome Back</h2>
+                    <p class="auth-subtitle">Enter your details to log in to your account.</p>
+                    
+                    <form id="authLoginForm" onsubmit="handleLoginSubmit(event);">
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label for="loginEmail" style="display:block; margin-bottom:6px; font-weight:600; color:var(--text);">Email Address</label>
+                            <input type="email" id="loginEmail" placeholder="Enter your email" required style="width:100%; padding:12px; border:1px solid #dcdde1; border-radius:8px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 24px;">
+                            <label for="loginPassword" style="display:block; margin-bottom:6px; font-weight:600; color:var(--text);">Password</label>
+                            <input type="password" id="loginPassword" placeholder="Enter password" required style="width:100%; padding:12px; border:1px solid #dcdde1; border-radius:8px;">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%; padding:14px; font-weight:700; border-radius:8px; font-size:1rem;">
+                            Log In
+                        </button>
+                    </form>
+                </div>
+
+                <!-- ==================== REGISTER FORM ==================== -->
+                <div id="authRegisterFormSection" style="display: none;">
+                    <h2 class="auth-title">Create Account</h2>
+                    <p class="auth-subtitle">Join Delhi's premier student housing co-living community.</p>
+
+                    <!-- Role Card Selectors -->
+                    <div class="auth-role-select">
+                        <div class="role-card active" id="roleCardStudent" onclick="switchRole('student')">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                            <div class="role-title">I'm a Student</div>
+                        </div>
+                        <div class="role-card" id="roleCardOwner" onclick="switchRole('owner')">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                            <div class="role-title">I'm an Owner</div>
+                        </div>
+                    </div>
+                    
+                    <form id="authRegisterForm" onsubmit="handleRegisterSubmit(event);">
+                        <div class="form-group" style="margin-bottom: 16px;">
+                            <label for="regName" style="display:block; margin-bottom:6px; font-weight:600; color:var(--text);">Full Name</label>
+                            <input type="text" id="regName" placeholder="Enter your full name" required style="width:100%; padding:12px; border:1px solid #dcdde1; border-radius:8px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 16px;">
+                            <label for="regEmail" style="display:block; margin-bottom:6px; font-weight:600; color:var(--text);">Email Address</label>
+                            <input type="email" id="regEmail" placeholder="Enter email" required style="width:100%; padding:12px; border:1px solid #dcdde1; border-radius:8px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 16px;">
+                            <label for="regPhone" style="display:block; margin-bottom:6px; font-weight:600; color:var(--text);">Phone Number</label>
+                            <input type="tel" id="regPhone" placeholder="Enter 10-digit number" required style="width:100%; padding:12px; border:1px solid #dcdde1; border-radius:8px;">
+                        </div>
+                        <!-- Student College Field -->
+                        <div class="form-group" id="regCollegeGroup" style="margin-bottom: 16px;">
+                            <label for="regCollege" style="display:block; margin-bottom:6px; font-weight:600; color:var(--text);">College / University</label>
+                            <input type="text" id="regCollege" placeholder="e.g. SRCC, Delhi University" style="width:100%; padding:12px; border:1px solid #dcdde1; border-radius:8px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 24px;">
+                            <label for="regPassword" style="display:block; margin-bottom:6px; font-weight:600; color:var(--text);">Password</label>
+                            <input type="password" id="regPassword" placeholder="Create strong password" required style="width:100%; padding:12px; border:1px solid #dcdde1; border-radius:8px;">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%; padding:14px; font-weight:700; border-radius:8px; font-size:1rem;">
+                            Register Account
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    
+    <!-- Application Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Page Specific Script -->
+    <script>
+        let currentRole = "student";
+
+        function switchAuthMode(mode) {
+            const loginBtn = document.getElementById('tabBtnLogin');
+            const regBtn = document.getElementById('tabBtnRegister');
+            const loginForm = document.getElementById('authLoginFormSection');
+            const regForm = document.getElementById('authRegisterFormSection');
+
+            if (mode === 'login') {
+                loginBtn.classList.add('active');
+                regBtn.classList.remove('active');
+                loginForm.style.display = 'block';
+                regForm.style.display = 'none';
+            } else {
+                loginBtn.classList.remove('active');
+                regBtn.classList.add('active');
+                loginForm.style.display = 'none';
+                regForm.style.display = 'block';
+            }
+        }
+
+        function switchRole(role) {
+            currentRole = role;
+            const studentCard = document.getElementById('roleCardStudent');
+            const ownerCard = document.getElementById('roleCardOwner');
+            const collegeGroup = document.getElementById('regCollegeGroup');
+
+            if (role === 'student') {
+                studentCard.classList.add('active');
+                ownerCard.classList.remove('active');
+                collegeGroup.style.display = 'block';
+            } else {
+                studentCard.classList.remove('active');
+                ownerCard.classList.add('active');
+                collegeGroup.style.display = 'none';
+            }
+        }
+
+        async function handleLoginSubmit(e) {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const pass = document.getElementById('loginPassword').value;
+
+            const res = await authService.login(email, pass);
+            if (res.success) {
+                showToast(`Welcome back, ${res.user.name}!`, "success");
+                setTimeout(() => {
+                    if (res.user.role === 'student') {
+                        window.location.href = "dashboard-student.html";
+                    } else {
+                        window.location.href = "dashboard-owner.html";
+                    }
+                }, 1000);
+            } else {
+                showToast(res.error, "error");
+            }
+        }
+
+        async function handleRegisterSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('regName').value;
+            const email = document.getElementById('regEmail').value;
+            const phone = document.getElementById('regPhone').value;
+            const password = document.getElementById('regPassword').value;
+            const college = currentRole === 'student' ? document.getElementById('regCollege').value : "";
+
+            const payload = {
+                name, email, phone, password, role: currentRole, college
+            };
+
+            const res = await authService.register(payload);
+            if (res.success) {
+                showToast("Account registered successfully!", "success");
+                setTimeout(() => {
+                    if (currentRole === 'student') {
+                        window.location.href = "dashboard-student.html";
+                    } else {
+                        window.location.href = "dashboard-owner.html";
+                    }
+                }, 1000);
+            } else {
+                showToast(res.error, "error");
+            }
+        }
+
+        // On DOM loaded, check if user is already logged in
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const user = authService.getUser();
+                if (user) {
+                    if (user.role === 'student') {
+                        window.location.href = "dashboard-student.html";
+                    } else {
+                        window.location.href = "dashboard-owner.html";
+                    }
+                }
+            }, 600);
+        });
+    </script>
+</body>
+</html>

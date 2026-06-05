@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RK Students Hub – Premium PGs, hostels, and student co-living spaces in Delhi NCR with zero brokerage. Find your home.">
+    <meta name="keywords" content="student housing Delhi, student PG GTB Nagar, girls PG Delhi, boys PG Delhi, PG near North Campus, zero brokerage PGs, RK properties student hub">
+    <meta name="author" content="Rama Krishna Properties">
+    <meta name="theme-color" content="#1a237e">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <title>RK Students Hub | Premium Student PGs & Hostels in Delhi NCR | Zero Brokerage</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-hub.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">RK</div>
+            <div class="preloader-spinner"></div>
+            <p class="preloader-text">Opening Student Portal...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/images/rk-logo.png" alt="Rama Krishna Properties Logo" class="logo-img" style="height:50px;width:auto;object-fit:contain;">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#hero" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#featured" class="nav-link">Properties</a></li>
+                <li><a href="students-hub.html" class="nav-link active">Student Hub</a></li>
+                <li><a href="legal-services.html" class="nav-link">Legal Services</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <span>More Info</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="index.html#tools">Property Tools</a></li>
+                        <li><a href="index.html#investment">Investment Advice</a></li>
+                        <li><a href="blog.html">Blog Articles</a></li>
+                        <li><a href="index.html#faq">FAQ Help</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline" style="border-radius: var(--radius-sm); margin-right: 10px;">Login/Register</a>
+                <a href="membership.html" class="btn btn-secondary nav-cta">Get Premium</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html#hero" class="mobile-link">Home</a></li>
+            <li><a href="students-hub.html" class="mobile-link">Students Hub</a></li>
+            <li><a href="legal-services.html" class="mobile-link">Legal Services</a></li>
+            <li><a href="index.html#featured" class="mobile-link">Properties</a></li>
+            <li><a href="index.html#services" class="mobile-link">Services</a></li>
+            <li><a href="index.html#tools" class="mobile-link">Tools</a></li>
+            <li><a href="blog.html" class="mobile-link">Blog</a></li>
+            <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+            <li><a href="login.html" class="mobile-link">Login/Register</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="membership.html" class="btn btn-secondary" style="width:100%;text-align:center;">
+                Upgrade to Premium
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== HUB HERO SECTION ==================== -->
+    <header class="hub-hero">
+        <div class="container">
+            <span class="hub-badge">One-Stop Solution for Students</span>
+            <h1 class="hub-hero-title">Find Your Perfect PG & Hostel<br><span style="color: var(--gold-light);">Zero Brokerage. Guaranteed.</span></h1>
+            <p class="hub-hero-subtitle">Handpicked co-living spaces, verified listings near Delhi NCR universities, and complete digital legal support for tenants.</p>
+        </div>
+    </header>
+
+    <!-- ==================== SMART SEARCH BAR ==================== -->
+    <div class="search-hub-container">
+        <div class="search-hub-card">
+            <div class="search-hub-tabs">
+                <button class="search-hub-tab active" data-type="all">All Properties</button>
+                <button class="search-hub-tab" data-type="pg">PGs</button>
+                <button class="search-hub-tab" data-type="hostel">Hostels</button>
+                <button class="search-hub-tab" data-type="flat">Flat Share</button>
+            </div>
+            <form class="search-hub-form" onsubmit="event.preventDefault();">
+                <div class="search-hub-group">
+                    <label for="hubSearchInput">Where do you want to live?</label>
+                    <input type="text" id="hubSearchInput" placeholder="Enter college name, area or metro station...">
+                </div>
+                <div class="search-hub-group">
+                    <label for="budgetSlider">Max Monthly Budget</label>
+                    <input type="range" id="budgetSlider" min="3000" max="25000" step="500" value="25000" style="margin-top: 15px;">
+                    <div class="budget-range-value">
+                        <span>₹3,000</span>
+                        <span id="budgetValText" style="font-weight: 700; color: var(--primary);">₹25,000</span>
+                    </div>
+                </div>
+                <div class="search-hub-group">
+                    <label>Amenities</label>
+                    <button type="button" class="search-filters-toggle" id="advancedFilterToggle" style="margin-top:12px;">
+                        More Filters 
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </div>
+                <div class="search-hub-group">
+                    <button type="button" class="btn btn-primary search-hub-btn" onclick="studentHub.renderListings();">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </form>
+            
+            <!-- Advanced Filters Drawer -->
+            <div class="advanced-filters-panel" id="advancedFiltersPanel">
+                <div class="search-hub-group" style="grid-column: 1 / -1;">
+                    <label style="margin-bottom: 10px;">Select Required Amenities</label>
+                    <div class="amenity-checkboxes">
+                        <label class="amenity-check"><input type="checkbox" class="amenity-checkbox" data-amenity="wifi"> 📶 WiFi Connection</label>
+                        <label class="amenity-check"><input type="checkbox" class="amenity-checkbox" data-amenity="food"> 🍲 Food & Meals Included</label>
+                        <label class="amenity-check"><input type="checkbox" class="amenity-checkbox" data-amenity="ac"> ❄️ AC Rooms</label>
+                        <label class="amenity-check"><input type="checkbox" class="amenity-checkbox" data-amenity="laundry"> 🧺 Laundry & Washing</label>
+                        <label class="amenity-check"><input type="checkbox" class="amenity-checkbox" data-amenity="gym"> 💪 Gym / Fitness Center</label>
+                        <label class="amenity-check"><input type="checkbox" class="amenity-checkbox" data-amenity="parking"> 🚗 Vehicle Parking</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MAIN PORTAL VIEW ==================== -->
+    <main class="hub-main">
+        <div class="container">
+            <div class="hub-layout">
+                <!-- Sidebar Filters -->
+                <aside class="hub-sidebar">
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Gender profile</h4>
+                        <div class="filter-pill-list">
+                            <div class="filter-pill-item filter-gender-pill active" data-gender="all">
+                                <span>All Genders</span>
+                                <span class="count">Any</span>
+                            </div>
+                            <div class="filter-pill-item filter-gender-pill" data-gender="girls">
+                                <span>Girls Only</span>
+                                <span class="count">PG</span>
+                            </div>
+                            <div class="filter-pill-item filter-gender-pill" data-gender="boys">
+                                <span>Boys Only</span>
+                                <span class="count">PG</span>
+                            </div>
+                            <div class="filter-pill-item filter-gender-pill" data-gender="unisex">
+                                <span>Co-ed / Unisex</span>
+                                <span class="count">Mix</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Assurance & Trust</h4>
+                        <ul style="display:flex; flex-direction:column; gap:12px; font-size:0.85rem; color:var(--text-light);">
+                            <li>🏢 100% Physical Verification</li>
+                            <li>📜 Integrated Digital Rent Agreement</li>
+                            <li>🛡️ Police Verification Support</li>
+                            <li>🤝 No Agents, Direct Owners</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Listing Cards -->
+                <section>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 25px;">
+                        <h2 style="font-size:1.5rem; font-weight:700; color:var(--primary);" id="listingsCountText">Loading listings...</h2>
+                        <a href="membership.html" style="font-size:0.9rem; font-weight:600; color:var(--gold-dark); text-decoration:underline;">How Anti-Brokerage Works</a>
+                    </div>
+
+                    <div class="student-property-grid" id="studentPropertiesGrid">
+                        <!-- Filled by JS -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== MEMBERSHIP PROMO BANNER ==================== -->
+    <section class="membership-promo">
+        <div class="container">
+            <div class="membership-promo-grid">
+                <div>
+                    <h2 class="membership-promo-title">Say Goodbye to Heavy Brokerage Fees</h2>
+                    <p style="font-size:1.15rem; color:var(--gray-light); line-height:1.6;">Most brokers in Delhi charge 15 to 30 days of rent as brokerage fees. With RK Students Hub, pay just <strong>₹49 once</strong> to unlock direct owner contact numbers and rent directly without any mediators.</p>
+                    <div class="membership-promo-list">
+                        <div class="membership-promo-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Unlock unlimited verified owner numbers for 1 Full Year</span>
+                        </div>
+                        <div class="membership-promo-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Save up to ₹15,000 on broker commissions</span>
+                        </div>
+                        <div class="membership-promo-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Priority scheduling for physical site visits</span>
+                        </div>
+                    </div>
+                    <a href="membership.html" class="btn btn-secondary btn-lg">Join Anti-Brokerage Membership</a>
+                </div>
+                <div class="membership-promo-card">
+                    <h3 style="font-size:1.4rem; color:var(--white); font-weight:700;">Student Hub Membership</h3>
+                    <div class="membership-price-tag">₹49<span>/year</span></div>
+                    <p style="color:var(--gray-light); font-size:0.9rem; margin-bottom:24px;">Instant Activation • 100% Refund if you don't find a room in 30 days</p>
+                    <a href="membership.html" class="btn btn-primary" style="width:100%;">Get Instant Access</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/rk-logo.png" alt="Rama Krishna Properties Logo" style="height:56px;width:auto;object-fit:contain;">
+                    </div>
+                    <p class="footer-desc">Your trusted real estate partner for residential, commercial, and investment properties. Building dreams, one property at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="students-hub.html">Student Hub Portal</a></li>
+                        <li><a href="legal-services.html">Tenant Legal Care</a></li>
+                        <li><a href="index.html#featured">Builder Floors</a></li>
+                        <li><a href="index.html#featured">Apartments & Flats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="blog.html">Blog & Guidance</a></li>
+                        <li><a href="sitemap.html">Visual Sitemap</a></li>
+                        <li><a href="index.html#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Office Address</h4>
+                    <div class="footer-contact-info">
+                        <p>📍 Office 444, Gali No 8, Chandan Park, Siraspur, Delhi 110042</p>
+                        <p>📞 Phone: +91 78388 25736</p>
+                        <p>✉️ Email: ramakrishnaproperties@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rama Krishna Properties. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="sitemap.html">Sitemap</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    
+    <!-- Application Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/payments.js"></script>
+    <script src="js/student-hub.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

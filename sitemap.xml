@@ -44,4 +44,36 @@
         <priority>0.3</priority>
     </url>
 
+    <!-- Earn With Us -->
+    <url>
+        <loc>https://legalaidsindia.github.io/Rkproperties/earn-with-us.html</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Students Hub -->
+    <url>
+        <loc>https://legalaidsindia.github.io/Rkproperties/students-hub.html</loc>
+        <lastmod>2025-06-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Legal Services -->
+    <url>
+        <loc>https://legalaidsindia.github.io/Rkproperties/legal-services.html</loc>
+        <lastmod>2025-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Login -->
+    <url>
+        <loc>https://legalaidsindia.github.io/Rkproperties/login.html</loc>
+        <lastmod>2025-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
 </urlset>
